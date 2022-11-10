@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactInfoActivity">
+
+    <!--TODO 03. Create a new layout file to define the GUI elements of the ContactInfoActivity.-->
+
+    <ImageView
+        android:id="@+id/ivContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/productsans_regular"
+        android:text="FULL NAME"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivContact" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chpGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/productsans_regular"
+            app:chipIcon="@drawable/ic_phone_black_24dp"
+            tools:text="@string/call_button_label" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/productsans_regular"
+            app:chipIcon="@drawable/ic_textsms_black_24dp"
+            tools:text="@string/text_button_label" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/productsans_regular"
+            app:chipIcon="@drawable/ic_email_black_24dp"
+            tools:text="@string/email_button_label" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/productsans_regular"
+            app:chipIcon="@drawable/ic_place_black_24dp"
+            tools:text="@string/directions_button_label" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/productsans_regular"
+            app:chipIcon="@drawable/ic_public_black_24dp"
+            tools:text="@string/web_button_label" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <ImageView
+        android:id="@+id/ivTelephone"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tilTelephoneNumber"
+        app:layout_constraintEnd_toStartOf="@+id/tilTelephoneNumber"
+        app:layout_constraintTop_toTopOf="@+id/tilTelephoneNumber"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/tilTelephoneNumber"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/chpGroup"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/chpGroup">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:hint="@string/phone_hint" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:id="@+id/tilTelephoneNumber"
+        android:layout_width="290dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/chpGroup"
+        app:layout_constraintTop_toBottomOf="@+id/chpGroup"
+        android:text="@string/phone_hint" />
+
+    <ImageView
+        android:id="@+id/ivEmail"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tilEmail"
+        app:layout_constraintEnd_toStartOf="@+id/tilEmail"
+        app:layout_constraintTop_toTopOf="@+id/tilEmail"
+        app:srcCompat="@drawable/ic_email_black_24dp" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/tilEmail"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/tilTelephoneNumber"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/tilTelephoneNumber"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tilTelephoneNumber">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:hint="@string/email_hint" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:id="@+id/tilEmail"
+        android:layout_width="290dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilTelephoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/tilTelephoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tilTelephoneNumber"
+        android:text="@string/email_hint" />
+
+    <ImageView
+        android:id="@+id/ivAddress"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tilAddress"
+        app:layout_constraintEnd_toStartOf="@+id/tilAddress"
+        app:layout_constraintTop_toTopOf="@+id/tilAddress"
+        app:srcCompat="@drawable/ic_place_black_24dp" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/tilAddress"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/tilEmail"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/tilEmail"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tilEmail">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:hint="@string/address_hint" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:id="@+id/tilAddress"
+        android:layout_width="290dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilEmail"
+        app:layout_constraintStart_toStartOf="@+id/tilEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmail"
+        android:text="@string/address_hint" />
+
+    <ImageView
+        android:id="@+id/ivWebsite"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tilWebsite"
+        app:layout_constraintEnd_toStartOf="@+id/tilWebsite"
+        app:layout_constraintTop_toTopOf="@+id/tilWebsite"
+        app:srcCompat="@drawable/ic_public_black_24dp" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/tilWebsite"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/tilAddress"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/tilAddress"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tilAddress">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:hint="@string/website_hint" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:id="@+id/tilWebsite"
+        android:layout_width="290dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilAddress"
+        app:layout_constraintStart_toStartOf="@+id/tilAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tilAddress"
+        android:text="@string/website_hint" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

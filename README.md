@@ -10,10 +10,10 @@
 
 > :heavy_check_mark: :x: <br>
 
-> :x: TODO 01. Create a new layout file to define the GUI elements of the ContactFormActivity. <br>
-> :x: TODO 02. Define the basic skeleton of the ContactFormActivity. Inflate the layout defined in the first step to display the GUI elements on screen. <br>
-> :x: TODO 03. Create a new layout file to define the GUI elements of the ContactInfoActivity. <br>
-> :x: TODO 04. Define the basic skeleton of the ContactInfoActivity. Inflate the layout defined in the first step to display the GUI elements on screen. <br>
+> :heavy_check_mark: TODO 01. Create a new layout file to define the GUI elements of the ContactFormActivity. <br>
+> :heavy_check_mark: TODO 02. Define the basic skeleton of the ContactFormActivity. Inflate the layout defined in the first step to display the GUI elements on screen. <br>
+> :heavy_check_mark: TODO 03. Create a new layout file to define the GUI elements of the ContactInfoActivity. <br>
+> :heavy_check_mark: TODO 04. Define the basic skeleton of the ContactInfoActivity. Inflate the layout defined in the first step to display the GUI elements on screen. <br>
 > :x: TODO 05. Modify the Contact class, so you can use it to exchange Contact data between ContactFormActivity and ContactInfoActivity <br>
 > :x: TODO 06. Create a new method that reads the values in the several EditText elements of the layout and then uses the Contact class to send those data to ContactInfoActivity <br>
 > :x: TODO 07. Create a new method that reads the contact info coming from ContactFormActivity and use it to populate the several TextView elements in the layout. <br>
