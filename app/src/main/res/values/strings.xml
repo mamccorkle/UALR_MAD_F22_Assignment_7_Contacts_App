@@ -12,4 +12,15 @@
     <string name="email_button_label">Email</string>
     <string name="directions_button_label">Map</string>
     <string name="web_button_label">Web</string>
+    <string name="first_name_then_last_name">Enter your first name followed by your last name</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="enter_your_home_address">Enter your address</string>
+    <string name="enter_your_website_address">Enter your website address</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="avatar">Avatar</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email address</string>
+    <string name="address">Address</string>
+    <string name="website_address">Website Address</string>
 </resources>
