@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--genaral spacing-->
+    <dimen name="spacing_tiny">1dp</dimen>
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_xmedium">7dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_smlarge">18dp</dimen>
+    <dimen name="spacing_mlarge">20dp</dimen>
+    <dimen name="spacing_mxlarge">25dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="spacing_xmlarge">40dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
+    <dimen name="spacing_xxxlarge">55dp</dimen>
+
+    <dimen name="by8_0">0dp</dimen>
+    <dimen name="by8_8">8dp</dimen>
+    <dimen name="by8_16">16dp</dimen>
+    <dimen name="by8_24">24dp</dimen>
+    <dimen name="by8_32">32dp</dimen>
+    <dimen name="by8_40">40dp</dimen>
+    <dimen name="by8_48">48dp</dimen>
+    <dimen name="by8_56">56dp</dimen>
+    <dimen name="by8_64">64dp</dimen>
+    <dimen name="by8_72">72dp</dimen>
+    <dimen name="by8_80">80dp</dimen>
+    <dimen name="by8_88">88dp</dimen>
+    <dimen name="by8_96">96dp</dimen>
+    <dimen name="by8_104">104dp</dimen>
+    <dimen name="by8_112">112dp</dimen>
+    <dimen name="by8_120">120dp</dimen>
+    <dimen name="by8_128">128dp</dimen>
+
+    <dimen name="textfield_width">332dp</dimen>
+    <dimen name="button_width">328dp</dimen>
+
+    <dimen name="textview_width">290dp</dimen>
+    <dimen name="chipgroup_width">350dp</dimen>
+</resources>

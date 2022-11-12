@@ -52,8 +52,6 @@ public class Contact implements Parcelable {
         this.website = in.readString();
     }
 
-//    public Contact() {}
-
     public Contact( String firstName, String lastName, String phoneNumber, String emailAddress, String address, String website ) {
         this.firstName = firstName;
         this.lastName = lastName;

@@ -12,7 +12,7 @@
         android:id="@+id/ivContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="@dimen/by8_96"
         android:contentDescription="@string/avatar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,7 @@
         style="@style/AppTheme.ContactInfo.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/by8_32"
         android:hint="@string/full_name"
         android:fontFamily="@font/productsans_regular"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,8 +33,8 @@
 
     <HorizontalScrollView
         android:id="@+id/HSV"
-        android:layout_width="350dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/chipgroup_width"
+        android:layout_height="@dimen/by8_0"
         android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
             android:id="@+id/chpGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="@dimen/by8_32"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvName">
@@ -56,9 +56,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/productsans_regular"
                 android:text="@string/call_button_label"
-                app:chipEndPadding="8dp"
+                app:chipEndPadding="@dimen/by8_8"
                 app:chipIcon="@drawable/ic_phone_black_24dp"
-                app:chipStartPadding="8dp" />
+                app:chipStartPadding="@dimen/by8_8" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chpText"
@@ -67,9 +67,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/productsans_regular"
                 android:text="@string/text_button_label"
-                app:chipEndPadding="8dp"
+                app:chipEndPadding="@dimen/by8_8"
                 app:chipIcon="@drawable/ic_textsms_black_24dp"
-                app:chipStartPadding="8dp" />
+                app:chipStartPadding="@dimen/by8_8" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chpEmail"
@@ -78,9 +78,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/productsans_regular"
                 android:text="@string/email_button_label"
-                app:chipEndPadding="8dp"
+                app:chipEndPadding="@dimen/by8_8"
                 app:chipIcon="@drawable/ic_email_black_24dp"
-                app:chipStartPadding="8dp" />
+                app:chipStartPadding="@dimen/by8_8" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chpMap"
@@ -89,9 +89,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/productsans_regular"
                 android:text="@string/directions_button_label"
-                app:chipEndPadding="8dp"
+                app:chipEndPadding="@dimen/by8_8"
                 app:chipIcon="@drawable/ic_place_black_24dp"
-                app:chipStartPadding="8dp" />
+                app:chipStartPadding="@dimen/by8_8" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chpWeb"
@@ -100,9 +100,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/productsans_regular"
                 android:text="@string/web_button_label"
-                app:chipEndPadding="8dp"
+                app:chipEndPadding="@dimen/by8_8"
                 app:chipIcon="@drawable/ic_public_black_24dp"
-                app:chipStartPadding="8dp" />
+                app:chipStartPadding="@dimen/by8_8" />
 
         </com.google.android.material.chip.ChipGroup>
 
@@ -110,9 +110,9 @@
 
     <ImageView
         android:id="@+id/ivTelephone"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="@dimen/by8_32"
+        android:layout_height="@dimen/by8_32"
+        android:layout_marginEnd="@dimen/by8_16"
         android:contentDescription="@string/phone_number"
         app:layout_constraintBottom_toBottomOf="@+id/tilTelephoneNumber"
         app:layout_constraintEnd_toStartOf="@+id/tilTelephoneNumber"
@@ -122,23 +122,23 @@
     <TextView
         android:id="@+id/tilTelephoneNumber"
         style="@style/AppTheme.ContactInfo.TextView"
-        android:layout_width="290dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="@dimen/textview_width"
+        android:layout_height="@dimen/by8_32"
+        android:layout_marginTop="@dimen/by8_32"
+        android:layout_marginEnd="@dimen/by8_8"
         android:fontFamily="@font/productsans_regular"
         android:gravity="start|center"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:paddingStart="@dimen/by8_16"
+        android:paddingEnd="@dimen/by8_16"
         android:hint="@string/phone_hint"
         app:layout_constraintEnd_toEndOf="@+id/HSV"
         app:layout_constraintTop_toBottomOf="@+id/HSV" />
 
     <ImageView
         android:id="@+id/ivEmail"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="@dimen/by8_32"
+        android:layout_height="@dimen/by8_32"
+        android:layout_marginEnd="@dimen/by8_16"
         android:contentDescription="@string/email_address"
         app:layout_constraintBottom_toBottomOf="@+id/tilEmail"
         app:layout_constraintEnd_toStartOf="@+id/tilEmail"
@@ -148,11 +148,11 @@
     <TextView
         android:id="@+id/tilEmail"
         style="@style/AppTheme.ContactInfo.TextView"
-        android:layout_width="290dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="32dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:layout_width="@dimen/textview_width"
+        android:layout_height="@dimen/by8_32"
+        android:layout_marginTop="@dimen/by8_32"
+        android:paddingStart="@dimen/by8_16"
+        android:paddingEnd="@dimen/by8_16"
         android:gravity="start|center"
         android:fontFamily="@font/productsans_regular"
         android:hint="@string/email_hint"
@@ -162,9 +162,9 @@
 
     <ImageView
         android:id="@+id/ivAddress"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="@dimen/by8_32"
+        android:layout_height="@dimen/by8_32"
+        android:layout_marginEnd="@dimen/by8_16"
         android:contentDescription="@string/address"
         app:layout_constraintBottom_toBottomOf="@+id/tilAddress"
         app:layout_constraintEnd_toStartOf="@+id/tilAddress"
@@ -174,11 +174,11 @@
     <TextView
         android:id="@+id/tilAddress"
         style="@style/AppTheme.ContactInfo.TextView"
-        android:layout_width="290dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="32dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:layout_width="@dimen/textview_width"
+        android:layout_height="@dimen/by8_32"
+        android:layout_marginTop="@dimen/by8_32"
+        android:paddingStart="@dimen/by8_16"
+        android:paddingEnd="@dimen/by8_16"
         android:gravity="start|center"
         android:fontFamily="@font/productsans_regular"
         android:hint="@string/address_hint"
@@ -188,9 +188,9 @@
 
     <ImageView
         android:id="@+id/ivWebsite"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="@dimen/by8_32"
+        android:layout_height="@dimen/by8_32"
+        android:layout_marginEnd="@dimen/by8_16"
         android:contentDescription="@string/website_address"
         app:layout_constraintBottom_toBottomOf="@+id/tilWebsite"
         app:layout_constraintEnd_toStartOf="@+id/tilWebsite"
@@ -200,11 +200,11 @@
     <TextView
         android:id="@+id/tilWebsite"
         style="@style/AppTheme.ContactInfo.TextView"
-        android:layout_width="290dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="32dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:layout_width="@dimen/textview_width"
+        android:layout_height="@dimen/by8_32"
+        android:layout_marginTop="@dimen/by8_32"
+        android:paddingStart="@dimen/by8_16"
+        android:paddingEnd="@dimen/by8_16"
         android:gravity="start|center"
         android:fontFamily="@font/productsans_regular"
         android:hint="@string/website_hint"

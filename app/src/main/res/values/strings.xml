@@ -23,4 +23,12 @@
     <string name="email_address">Email address</string>
     <string name="address">Address</string>
     <string name="website_address">Website Address</string>
+    <string name="email_subject">Assignment 7 - Android Contacts App</string>
+    <string name="email_text">Hi, hope all is well.\n\nI would like to set up a meeting next week. We will need to discuss Assignment 7 on Tue. at 9:00am. I am having trouble understanding how this email thing works..\n\nThanks,\nMM</string>
+    <string name="email_to">irconde@ualr.edu</string>
+    <string name="email_chooser">To complete action choose:</string>
+    <string name="txt">smsto:</string>
+    <string name="txt_body">sms_body</string>
+    <string name="txt_msg">Have you done last week\'s homework?</string>
+    <string name="tel">tel:</string>
 </resources>
